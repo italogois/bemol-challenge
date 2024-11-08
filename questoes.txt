@@ -1,0 +1,17 @@
+1. A solução deve ser disponibilizada em Cloud ou On-premise?
+    - Pensnado na aplicação frontend pode ser disponibilizada em uma Cloud como o AWS S3 com o serviço de CloudFront.
+
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa
+solução, responda qual ferramenta acreditas ser apropriada para o controle de tarefas. da equipe, a ferramenta é ágil?
+
+    - O Jira seria a opção porque nela podemos gerar relatórios de evolução do time de acordo com o andar do projetos além de automações como vincular cards com o github ou gitlab para melhorar o trackeamento das entregas. O Jira também tem muitos recursos que ajuda em equipes que trabalham com o Scrum
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+
+   - Sim, não é comum uma pessoa desenvolvedora Frontend liderar equipes, porém com o olhar que tenho para produto e o meu conhecimento técnico consigo organizar e direcionar a equipe e aproveitando o máximo da expertise de cada pessoa.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
+5. Acha válido esse desafio para o processo que está participando?
+
+  - Resposta para as perguntads 4 e 5. Este processo seletivo é para atuação como Frontend, porém o desafio é focado mais em um perfil backend pedindo muitas coisas que não se aplica para Frontend, com esse cenário fiz uma abstração do desafio olhando para um cenário de frontend. Como sugestão, pode ser criado um desafio específico de frontend podendo disponibilizar ou não um layout no figma.

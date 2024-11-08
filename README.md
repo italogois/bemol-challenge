@@ -24,3 +24,7 @@ Issues relacionada ao bug:
 
 https://github.com/JsDaddy/ngx-mask/issues/1375
 https://github.com/JsDaddy/ngx-mask/issues/1305
+
+## Questões
+
+No PDF do desafio pede para responder algumas questões, as mesmas estão no root do projeto com o nome `questoes.txt`
