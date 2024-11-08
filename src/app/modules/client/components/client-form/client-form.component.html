@@ -1,0 +1,114 @@
+<form [formGroup]="formClient" (ngSubmit)="submitForm()">
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Nome Completo</mat-label>
+        <input formControlName="nomeCompleto" matInput />
+        @if (formClient.get('nomeCompleto')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>CPF</mat-label>
+        <input formControlName="cpf" matInput mask="000.000.000-00" />
+        @if (formClient.get('cpf')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Telefone</mat-label>
+        <input formControlName="telefone" matInput mask="(00) 0 0000-0000" />
+        @if (formClient.get('telefone')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Data de Nascimento</mat-label>
+        <input formControlName="dataNascimento" matInput mask="00/00/0000" />
+        @if (formClient.get('dataNascimento')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input formControlName="email" matInput />
+        @if (formClient.get('email')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Endereço</legend>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>CEP</mat-label>
+        <input formControlName="cep" matInput mask="00000-000" (input)="handlerCep($event)" />
+        @if (formClient.get('cep')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Logradouro</mat-label>
+        <input formControlName="logradouro" matInput />
+        @if (formClient.get('logradouro')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Bairro</mat-label>
+        <input formControlName="bairro" matInput />
+        @if (formClient.get('bairro')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Cidade</mat-label>
+        <input formControlName="cidade" matInput />
+        @if (formClient.get('cidade')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Estado</mat-label>
+        <input formControlName="estado" matInput />
+        @if (formClient.get('estado')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Complemento</mat-label>
+        <input formControlName="complemento" matInput />
+        @if (formClient.get('complemento')?.invalid) {
+          <mat-error>{{ invalidErrorMesage }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+  </fieldset>
+
+  @if (!isDetailPage) {
+    <button mat-flat-button color="primary" type="submit">
+      {{ client ? 'Atualizar' : 'Cadastrar' }}
+    </button>
+  }
+</form>

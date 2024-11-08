@@ -1,0 +1,81 @@
+<mat-form-field>
+  <mat-label>Pesquisar Cliente</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Digite o nome do cliente" #input />
+</mat-form-field>
+
+<div class="bemol-table">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="nomeCompleto">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nome</th>
+      <td mat-cell *matCellDef="let row">{{ row.nomeCompleto }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="cpf">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>CPF</th>
+      <td mat-cell *matCellDef="let row">{{ row.cpf }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="telefone">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Telefone</th>
+      <td mat-cell *matCellDef="let row">{{ row.telefone }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>E-mail</th>
+      <td mat-cell *matCellDef="let row">{{ row.email }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Ações</th>
+      <td mat-cell *matCellDef="let row">
+        <ul class="actions">
+          <li>
+            <button
+              (click)="editEvent.emit(row.id)"
+              mat-icon-button
+              #tooltip="matTooltip"
+              matTooltip="Editar"
+              matTooltipPosition="above"
+              class="example-button">
+              <mat-icon aria-hidden="false" fontIcon="edit" />
+            </button>
+          </li>
+          <li>
+            <button
+              (click)="deleteEvent.emit(row.id)"
+              mat-icon-button
+              #tooltip="matTooltip"
+              matTooltip="Apagar"
+              matTooltipPosition="above"
+              class="example-button">
+              <mat-icon aria-hidden="false" fontIcon="delete" />
+            </button>
+          </li>
+
+          <li>
+            <button
+              (click)="detailEvent.emit(row.id)"
+              mat-icon-button
+              #tooltip="matTooltip"
+              matTooltip="Detalhes"
+              matTooltipPosition="above"
+              class="example-button">
+              <mat-icon aria-hidden="false" fontIcon="visibility" />
+            </button>
+          </li>
+        </ul>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter</td>
+    </tr>
+  </table>
+
+  <div class="center-paginate">
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+  </div>
+</div>

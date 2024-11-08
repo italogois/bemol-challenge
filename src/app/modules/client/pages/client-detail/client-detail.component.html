@@ -1,0 +1,28 @@
+@if (clientDetails$ | async; as clientDetails) {
+  <mat-tab-group [dynamicHeight]="true" animationDuration="0ms">
+    <mat-tab label="Dados do Cliente">
+      <div class="tab-content">
+        <app-client-form [client]="clientDetails.clientDetail" [isDetailPage]="true" />
+
+        <div>
+          <a [routerLink]="['../../edit', clientDetails.clientDetail.id]" mat-flat-button color="primary" type="button"
+            >Editar</a
+          >
+
+          <button
+            style="margin-left: 10px"
+            (click)="deleteClient(clientDetails.clientDetail.id)"
+            mat-flat-button
+            color="warn"
+            type="button">
+            Remover
+          </button>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Histórico"
+      ><div class="tab-content">
+        <app-history-table [historyList]="clientDetails.history" /></div
+    ></mat-tab>
+  </mat-tab-group>
+}

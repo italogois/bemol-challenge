@@ -1,0 +1,11 @@
+<div class="button-wrapper">
+  <a mat-flat-button color="primary" [routerLink]="'../register'">Registar Cliente</a>
+</div>
+
+@if (clientsList$ | async; as clientList) {
+  <app-client-table
+    [clientList]="clientList"
+    (deleteEvent)="deleteClient($event)"
+    (editEvent)="editEvent($event)"
+    (detailEvent)="detailEvent($event)" />
+}

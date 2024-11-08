@@ -1,0 +1,23 @@
+<div class="sidebar">
+  <div class="logo">
+    <img width="300" src="../../../assets/bemol.svg" alt="" />
+  </div>
+
+  <div class="mobile-menu-icon">
+    <mat-icon
+      (click)="toggleMobileMenu()"
+      aria-hidden="false"
+      aria-label="Example home icon"
+      fontIcon="menu"></mat-icon>
+  </div>
+
+  <ul class="menu-list" [class.show-mobile-menu]="canShowMenu">
+    @for (item of menuList; track $index) {
+      <li class="item">
+        <a (click)="closeMobileMenu()" [routerLink]="item.path" routerLinkActive="router-link-active" href="">{{
+          item.name
+        }}</a>
+      </li>
+    }
+  </ul>
+</div>

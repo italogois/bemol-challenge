@@ -1,0 +1,11 @@
+@import '../../../styles/mixins.scss';
+
+.page-title {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 700;
+
+  @include media-query-small {
+    font-size: 32px;
+  }
+}

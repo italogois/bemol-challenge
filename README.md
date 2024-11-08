@@ -1,27 +1,24 @@
 # BemolOmnichanel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+## Requerimentos
 
-## Development server
+- nodeJS LTS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Executar projeto
 
-## Code scaffolding
+`npm run start`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Vai executar o app em `http://localhost:4200/` e o server local `http://localhost:3000/`
 
-## Build
+## Server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+No root do projeto tem os arquivos db.json e db_copy.json. Após os testes caso queira retornar o dados oirignais copie os dados do db_copy.json em db.json
 
-## Running unit tests
+## Observação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A lib `NGX MASk` esta com bug interno onde não esta reconhecendo o estado de touched dos control.
 
-## Running end-to-end tests
+Issues relacionada ao bug:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://github.com/JsDaddy/ngx-mask/issues/1375
+https://github.com/JsDaddy/ngx-mask/issues/1305

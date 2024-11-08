@@ -1,0 +1,3 @@
+@if (client$ | async; as client) {
+  <app-client-form [client]="client" (formValueEvent)="edit($event)" />
+}

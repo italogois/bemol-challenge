@@ -1,0 +1,80 @@
+@use 'sass:map';
+@import '../../../styles/pallete.scss';
+@import '../../../styles/mixins.scss';
+
+.sidebar {
+  background: map.get($bemol-primary, 500);
+  padding: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 999;
+
+  @include media-query-small {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 40px;
+
+    @include media-query-small {
+      margin-top: 0;
+    }
+
+    img {
+      width: 200px;
+      object-fit: cover;
+
+      @include media-query-small {
+        width: 80px;
+      }
+    }
+  }
+
+  .mobile-menu-icon {
+    display: none;
+    color: #ffffff;
+
+    @include media-query-small {
+      display: block;
+    }
+  }
+
+  .menu-list {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 40px 0;
+    display: block;
+
+    @include media-query-small {
+      display: none;
+      position: absolute;
+      background: map.get($bemol-primary, 500);
+      left: 0;
+      width: 100%;
+      margin: 0;
+      top: 70px;
+    }
+
+    .item {
+      margin-bottom: 30px;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .show-mobile-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "clients": [
+    {
+      "id": "2",
+      "nomeCompleto": "Carlos Eduardo Santos",
+      "cpf": "987.654.321-00",
+      "telefone": "(97) 9 9876-5432",
+      "dataNascimento": "22/08/2005",
+      "email": "carlos.santos@example.com",
+      "cep": "69400-000",
+      "logradouro": "Avenida Getúlio Vargas",
+      "bairro": "Centro",
+      "cidade": "Manacapuru",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "3",
+      "nomeCompleto": "Mariana Oliveira Costa",
+      "cpf": "321.654.987-00",
+      "telefone": "(92) 9 1345-6789",
+      "dataNascimento": "25/07/1992",
+      "email": "mariana.costa@example.com",
+      "cep": "69075-000",
+      "logradouro": "Rua das Flores",
+      "bairro": "Flores",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "4",
+      "nomeCompleto": "Pedro Henrique Nunes",
+      "cpf": "654.321.987-00",
+      "telefone": "(97) 9 1827-3645",
+      "dataNascimento": "10/06/1989",
+      "email": "pedro.nunes@example.com",
+      "cep": "69500-000",
+      "logradouro": "Rua dos Tamarindos",
+      "bairro": "São Francisco",
+      "cidade": "Coari",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "5",
+      "nomeCompleto": "Fernanda Lima Pereira",
+      "cpf": "789.123.456-00",
+      "telefone": "(92) 9 1256-7890",
+      "dataNascimento": "20/11/2009",
+      "email": "fernanda.pereira@example.com",
+      "cep": "69060-000",
+      "logradouro": "Avenida Constantino Nery",
+      "bairro": "Chapada",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "6",
+      "nomeCompleto": "Lucas Melo Albuquerque",
+      "cpf": "852.963.741-00",
+      "telefone": "(97) 9 1725-8764",
+      "dataNascimento": "30/03/2002",
+      "email": "lucas.albuquerque@example.com",
+      "cep": "69800-000",
+      "logradouro": "Rua 1 de Maio",
+      "bairro": "Centro",
+      "cidade": "Tabatinga",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "7",
+      "nomeCompleto": "Bruna Souza Ferreira",
+      "cpf": "159.753.486-00",
+      "telefone": "(92) 9 1432-8765",
+      "dataNascimento": "1987-07-18",
+      "email": "bruna.ferreira@example.com",
+      "cep": "69020-000",
+      "logradouro": "Rua Ramos Ferreira",
+      "bairro": "Centro",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "8",
+      "nomeCompleto": "Rafael Alves Barros",
+      "cpf": "741.852.963-00",
+      "telefone": "(92) 9 1789-2345",
+      "dataNascimento": "1993-05-11",
+      "email": "rafael.barros@example.com",
+      "cep": "69040-000",
+      "logradouro": "Rua das Acácias",
+      "bairro": "Adrianópolis",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "9",
+      "nomeCompleto": "Sofia Lima Souza",
+      "cpf": "963.852.741-00",
+      "telefone": "(97) 9 1234-5678",
+      "dataNascimento": "22/04/1996",
+      "email": "sofia.souza@example.com",
+      "cep": "69100-000",
+      "logradouro": "Rua dos Girassóis",
+      "bairro": "São Lázaro",
+      "cidade": "Parintins",
+      "estado": "AM",
+      "complemento": ""
+    },
+    {
+      "id": "10",
+      "nomeCompleto": "Gabriel Mendes Rocha",
+      "cpf": "369.258.147-00",
+      "telefone": "(92) 9 1823-7654",
+      "dataNascimento": "09/10/1998",
+      "email": "gabriel.rocha@example.com",
+      "cep": "69035-000",
+      "logradouro": "Avenida Djalma Batista",
+      "bairro": "Chapada",
+      "cidade": "Manaus",
+      "estado": "AM",
+      "complemento": ""
+    }
+  ],
+  "history": [
+    {
+      "clientID": "1",
+      "id": "1",
+      "nomeCanal": "site",
+      "data": "01/11/2023 - 09:30:12",
+      "responsavel": "João Silva",
+      "iteracao": "Acesso inicial e visualização de serviços."
+    },
+    {
+      "clientID": "1",
+      "id": "2",
+      "nomeCanal": "email",
+      "data": "02/11/2023 - 14:25:45",
+      "responsavel": "Ana Souza",
+      "iteracao": "Envio de cotação personalizada."
+    },
+    {
+      "clientID": "1",
+      "id": "3",
+      "nomeCanal": "whatsapp",
+      "data": "04/11/2023 - 10:15:23",
+      "responsavel": "Carlos Silva",
+      "iteracao": "Discussão sobre os planos disponíveis."
+    },
+    {
+      "clientID": "1",
+      "id": "4",
+      "nomeCanal": "site",
+      "data": "06/11/2023 - 18:45:59",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Atualização de cadastro."
+    },
+    {
+      "clientID": "1",
+      "id": "5",
+      "nomeCanal": "email",
+      "data": "07/11/2023 - 16:05:34",
+      "responsavel": "João Silva",
+      "iteracao": "Confirmação de contrato."
+    },
+    {
+      "clientID": "2",
+      "id": "6",
+      "nomeCanal": "site",
+      "data": "10/11/2023 - 15:34:12",
+      "responsavel": "Carlos Silva",
+      "iteracao": "Consulta de informações sobre serviços disponíveis."
+    },
+    {
+      "clientID": "2",
+      "id": "7",
+      "nomeCanal": "email",
+      "data": "12/11/2023 - 10:45:32",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Envio de proposta de contrato."
+    },
+    {
+      "clientID": "2",
+      "id": "8",
+      "nomeCanal": "whatsapp",
+      "data": "13/11/2023 - 09:20:21",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Atualização sobre status de pagamento."
+    },
+    {
+      "clientID": "2",
+      "id": "9",
+      "nomeCanal": "aplicativo",
+      "data": "14/11/2023 - 16:45:58",
+      "responsavel": "Carlos Santos",
+      "iteracao": "Atendimento via aplicativo."
+    },
+    {
+      "clientID": "2",
+      "id": "10",
+      "nomeCanal": "site",
+      "data": "15/11/2023 - 11:35:48",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Confirmação de dados cadastrais."
+    },
+    {
+      "clientID": "3",
+      "id": "11",
+      "nomeCanal": "whatsapp",
+      "data": "08/11/2023 - 11:15:24",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Resposta a dúvidas sobre os planos."
+    },
+    {
+      "clientID": "3",
+      "id": "12",
+      "nomeCanal": "aplicativo",
+      "data": "09/11/2023 - 17:21:56",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Confirmação de pagamento e detalhes de acesso."
+    },
+    {
+      "clientID": "3",
+      "id": "13",
+      "nomeCanal": "email",
+      "data": "10/11/2023 - 13:30:15",
+      "responsavel": "Carlos Silva",
+      "iteracao": "Envio de informações adicionais."
+    },
+    {
+      "clientID": "3",
+      "id": "14",
+      "nomeCanal": "site",
+      "data": "12/11/2023 - 08:15:47",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Atualização de senha."
+    },
+    {
+      "clientID": "3",
+      "id": "15",
+      "nomeCanal": "whatsapp",
+      "data": "13/11/2023 - 18:25:23",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Consulta sobre promoções vigentes."
+    },
+    {
+      "clientID": "4",
+      "id": "16",
+      "nomeCanal": "site",
+      "data": "10/11/2023 - 14:30:23",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Informação sobre novos serviços."
+    },
+    {
+      "clientID": "4",
+      "id": "17",
+      "nomeCanal": "whatsapp",
+      "data": "11/11/2023 - 12:15:55",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Apoio ao cliente com dificuldades de acesso."
+    },
+    {
+      "clientID": "4",
+      "id": "18",
+      "nomeCanal": "email",
+      "data": "13/11/2023 - 11:25:40",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Envio de documentação adicional."
+    },
+    {
+      "clientID": "4",
+      "id": "19",
+      "nomeCanal": "aplicativo",
+      "data": "14/11/2023 - 19:30:21",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Confirmação de agendamento."
+    },
+    {
+      "clientID": "4",
+      "id": "20",
+      "nomeCanal": "whatsapp",
+      "data": "15/11/2023 - 08:45:32",
+      "responsavel": "Ana Souza",
+      "iteracao": "Consulta sobre horários de atendimento."
+    },
+    {
+      "clientID": "5",
+      "id": "21",
+      "nomeCanal": "site",
+      "data": "03/11/2023 - 09:30:12",
+      "responsavel": "João Souza",
+      "iteracao": "Acesso ao portal e visualização de planos."
+    },
+    {
+      "clientID": "5",
+      "id": "22",
+      "nomeCanal": "whatsapp",
+      "data": "04/11/2023 - 15:30:45",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Esclarecimento sobre pagamento."
+    },
+    {
+      "clientID": "5",
+      "id": "23",
+      "nomeCanal": "email",
+      "data": "05/11/2023 - 10:50:10",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Envio de detalhes sobre os serviços."
+    },
+    {
+      "clientID": "5",
+      "id": "24",
+      "nomeCanal": "aplicativo",
+      "data": "06/11/2023 - 18:22:16",
+      "responsavel": "Ana Souza",
+      "iteracao": "Confirmação de dados e solicitação de suporte."
+    },
+    {
+      "clientID": "5",
+      "id": "25",
+      "nomeCanal": "site",
+      "data": "07/11/2023 - 14:20:34",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Consulta sobre os benefícios do plano."
+    },
+    {
+      "clientID": "6",
+      "id": "26",
+      "nomeCanal": "email",
+      "data": "02/11/2023 - 12:15:50",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Envio de fatura mensal."
+    },
+    {
+      "clientID": "6",
+      "id": "27",
+      "nomeCanal": "site",
+      "data": "03/11/2023 - 16:25:30",
+      "responsavel": "Carlos Santos",
+      "iteracao": "Acesso inicial ao portal do cliente."
+    },
+    {
+      "clientID": "6",
+      "id": "28",
+      "nomeCanal": "aplicativo",
+      "data": "04/11/2023 - 09:35:22",
+      "responsavel": "Ana Souza",
+      "iteracao": "Solicitação de suporte técnico."
+    },
+    {
+      "clientID": "6",
+      "id": "29",
+      "nomeCanal": "whatsapp",
+      "data": "05/11/2023 - 17:45:48",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Consulta sobre mudança de plano."
+    },
+    {
+      "clientID": "6",
+      "id": "30",
+      "nomeCanal": "email",
+      "data": "06/11/2023 - 15:32:12",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Confirmação de atualização de endereço."
+    },
+    {
+      "clientID": "7",
+      "id": "31",
+      "nomeCanal": "site",
+      "data": "03/11/2023 - 09:55:12",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Exploração das funcionalidades da conta."
+    },
+    {
+      "clientID": "7",
+      "id": "32",
+      "nomeCanal": "whatsapp",
+      "data": "04/11/2023 - 11:10:24",
+      "responsavel": "João Silva",
+      "iteracao": "Esclarecimento sobre os termos de contrato."
+    },
+    {
+      "clientID": "7",
+      "id": "33",
+      "nomeCanal": "email",
+      "data": "05/11/2023 - 13:22:48",
+      "responsavel": "Carlos Santos",
+      "iteracao": "Envio de proposta revisada."
+    },
+    {
+      "clientID": "7",
+      "id": "34",
+      "nomeCanal": "aplicativo",
+      "data": "06/11/2023 - 16:30:50",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Confirmação de renovação de contrato."
+    },
+    {
+      "clientID": "7",
+      "id": "35",
+      "nomeCanal": "site",
+      "data": "07/11/2023 - 08:20:14",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Atualização de informações pessoais."
+    },
+    {
+      "clientID": "8",
+      "id": "36",
+      "nomeCanal": "email",
+      "data": "02/11/2023 - 11:05:32",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Envio de detalhes do novo plano."
+    },
+    {
+      "clientID": "8",
+      "id": "37",
+      "nomeCanal": "aplicativo",
+      "data": "03/11/2023 - 17:55:41",
+      "responsavel": "João Souza",
+      "iteracao": "Solicitação de suporte técnico."
+    },
+    {
+      "clientID": "8",
+      "id": "38",
+      "nomeCanal": "site",
+      "data": "04/11/2023 - 10:12:00",
+      "responsavel": "Carlos Silva",
+      "iteracao": "Consulta sobre o histórico de faturas."
+    },
+    {
+      "clientID": "8",
+      "id": "39",
+      "nomeCanal": "whatsapp",
+      "data": "05/11/2023 - 14:24:36",
+      "responsavel": "Ana Souza",
+      "iteracao": "Esclarecimento sobre a política de cancelamento."
+    },
+    {
+      "clientID": "8",
+      "id": "40",
+      "nomeCanal": "email",
+      "data": "06/11/2023 - 09:42:18",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Confirmação de alteração de plano."
+    },
+    {
+      "clientID": "9",
+      "id": "41",
+      "nomeCanal": "site",
+      "data": "03/11/2023 - 08:35:27",
+      "responsavel": "Lucas Mendes",
+      "iteracao": "Visualização dos planos disponíveis."
+    },
+    {
+      "clientID": "9",
+      "id": "42",
+      "nomeCanal": "aplicativo",
+      "data": "04/11/2023 - 16:20:33",
+      "responsavel": "Pedro Rocha",
+      "iteracao": "Atualização de dados de pagamento."
+    },
+    {
+      "clientID": "9",
+      "id": "43",
+      "nomeCanal": "whatsapp",
+      "data": "05/11/2023 - 10:30:11",
+      "responsavel": "Fernanda Lima",
+      "iteracao": "Solicitação de suporte para configuração da conta."
+    },
+    {
+      "clientID": "9",
+      "id": "44",
+      "nomeCanal": "email",
+      "data": "06/11/2023 - 12:45:20",
+      "responsavel": "Mariana Oliveira",
+      "iteracao": "Envio de documentos pendentes."
+    },
+    {
+      "clientID": "9",
+      "id": "45",
+      "nomeCanal": "site",
+      "data": "07/11/2023 - 11:22:14",
+      "responsavel": "João Souza",
+      "iteracao": "Confirmação de endereço atualizado."
+    },
+    {
+      "clientID": "10",
+      "id": "46",
+      "nomeCanal": "email",
+      "data": "02/11/2023 - 13:22:50",
+      "responsavel": "Carlos Santos",
+      "iteracao": "Envio de boleto de pagamento."
+    },
+    {
+      "clientID": "10",
+      "id": "47",
+      "nomeCanal": "whatsapp",
+      "data": "03/11/2023 - 18:45:00",
+      "responsavel": "Ana Souza",
+      "iteracao": "Consulta sobre prazo de confirmação de pagamento."
+    },
+    {
+      "clientID": "10",
+      "id": "48",
+      "nomeCanal": "site",
+      "data": "04/11/2023 - 09:55:12",
+      "responsavel": "João Silva",
+      "iteracao": "Exploração dos serviços adicionais."
+    }
+  ]
+}

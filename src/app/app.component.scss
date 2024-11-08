@@ -1,0 +1,10 @@
+@import '../styles/mixins.scss';
+
+.main-content {
+  max-width: 1960px;
+  margin: 50px 60px 0 380px;
+
+  @include media-query-small {
+    margin: 90px 16px 0 16px;
+  }
+}

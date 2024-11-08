@@ -1,0 +1,34 @@
+<div class="bemol-table">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="nomeCanal">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Canal</th>
+      <td mat-cell *matCellDef="let row">{{ row.nomeCanal }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="data">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Data</th>
+      <td mat-cell *matCellDef="let row">{{ row.data }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="responsavel">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Responsavel</th>
+      <td mat-cell *matCellDef="let row">{{ row.responsavel }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="iteracao">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Iteração</th>
+      <td mat-cell *matCellDef="let row">{{ row.iteracao }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter</td>
+    </tr>
+  </table>
+
+  <div class="center-paginate">
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+  </div>
+</div>

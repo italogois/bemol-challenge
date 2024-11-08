@@ -1,0 +1,37 @@
+@use 'sass:map';
+@import '../pallete.scss';
+
+html {
+  --mat-sort-arrow-color: #ffffff;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.bemol-table {
+  table {
+    width: 100%;
+  }
+
+  td,
+  th {
+    width: 25%;
+  }
+
+  .mat-mdc-row:nth-child(even) {
+    background: #f7f7f7;
+  }
+
+  .mat-mdc-header-row {
+    background: map.get($bemol-primary, 400);
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .mat-mdc-paginator-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
