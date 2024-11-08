@@ -6,6 +6,8 @@
 
 ## Executar projeto
 
+`npm i`
+
 `npm run start`
 
 Vai executar o app em `http://localhost:4200/` e o server local `http://localhost:3000/`
